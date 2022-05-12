@@ -1,7 +1,8 @@
-FROM fusuf/RAVANA:latest
+FROM node:latest
 
-RUN git clone https://github.com/nobody1001-sl/4.5 /root/4.5
-WORKDIR /root/4.5/
+RUN git clone https://github.com/KING-BOT-OFFICIAL/4.5-1 /root/4.5-1
+WORKDIR /root/4.5-1/
+RUN git clone https://github.com/KING-BOT-OFFICIAL/4.5-1
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
